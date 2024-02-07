@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  margin-top: 200px;
+  padding: 30px;
+  width: 75%;
+  height: 60%;
+  border: 2px solid gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15% auto;
+  place-items: center;
+  /* background-color: blue; */
+}
+
+@media (max-width: 600px){
+ .container{
+  /* width: 100%; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100%;
+ }
+ .col-1{
+  grid-row: 1;
+ }
+ .col-2{
+  grid-row: 2;
+ }
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+}
+.col-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.qty-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.qty{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70px;
+  border: 0.2px solid #e5e5e5;
+  padding-bottom: 3px;
+}
+.font{
+  font-size: 12px;
+}
+.cod-container{
+  width: 95%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 0.5px solid #e5e5e5;
+  font-size: small;
+}
+.cod-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.input{
+  border: none;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  font-size: smaller;
+  padding: 5px;
+}
+.btn-pin-chk{
+  border: 1px solid grey;
+  padding: 4px;
+  width: 55px;
+  text-align: center;
+  cursor: pointer;
+}
+.add-to-cart{
+  font-size: small;
+  width: 95%;
+  border: 0.5px solid #e5e5e5;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.disable-add-to-cart{
+  font-size: small;
+  width: 95%;
+  border: 0.5px solid #e5e5e5;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  /* cursor: pointer; */
+  background-color: grey;
+}
+.share-tags{
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+.share-tags span{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.sign{
+  cursor: pointer;
+  padding: 0 2px;
+}
